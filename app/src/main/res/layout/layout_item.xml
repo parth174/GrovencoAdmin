@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPadding="15dp"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="5dp">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_edit"
+        android:layout_toLeftOf="@+id/img_delete"
+        android:layout_marginRight="15dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/edit"
+        android:text="Edit"
+        android:textColor="@color/quantum_googred"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_delete"
+        android:src="@drawable/delete"
+        android:layout_alignParentRight="true"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/ll_labels"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:text="EXTRA"
+            android:id="@+id/tv_extra"
+            android:textAllCaps="true"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/quantum_white_100"
+            android:background="@drawable/background_square"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/img_grovenco_exclusive"
+            android:textColor="@color/quantum_white_100"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/exclusive_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:text="trending"
+            android:id="@+id/tv_trending"
+            android:textAllCaps="true"
+            android:layout_marginLeft="8dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/quantum_white_100"
+            android:background="@drawable/background_square"/>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/tv_edit"
+        android:id="@+id/rl_itemcode">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:id="@+id/tv_itemcode_text"
+                android:text="Itemcode : "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_itemcode_text"
+                android:textColor="@color/quantum_black_100"
+                android:textStyle="bold"
+                android:id="@+id/tv_itemcode"
+                android:textSize="18sp"
+                android:text="FBABC003"/>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_name"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl_itemcode">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:id="@+id/tv_name_text"
+            android:text="Name : "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            android:layout_below="@+id/rl_itemcode"
+            android:textColor="@color/quantum_black_100"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Aashirwad atta chakki fresh pissa hua gtgt5y5y6y "/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_stock"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ll_name">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="14sp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tv_stock_text"
+            android:text="Stock : "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:id="@+id/tv_stock"
+            android:paddingRight="8dp"
+            android:paddingTop="1dp"
+            android:layout_toRightOf="@+id/tv_stock_text"
+            android:paddingBottom="1dp"
+            android:textColor="@color/quantum_white_100"
+            android:background="@color/quantum_googgreenA700"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:text="24"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/tv_stock"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ll_labels_category"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:text="food and beverages"
+                android:id="@+id/tv_category"
+                android:textAllCaps="true"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/quantum_white_100"
+                android:background="@drawable/background_square_color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:id="@+id/tv_subcategory"
+                android:text="atta"
+                android:textAllCaps="true"
+                android:layout_marginLeft="8dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/quantum_white_100"
+                android:background="@drawable/background_square_color"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:id="@+id/btn_add_position"
+        android:textColor="@color/white"
+        android:background="@color/colorTheme"
+        android:text="ADD TO LIST (DHAMAKA/TRENDING/CARt) "
+        android:layout_below="@id/rl_stock"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:foreground="?attr/selectableItemBackground"
+        android:id="@+id/btn_remove"
+        android:textColor="@color/white"
+        android:background="@color/quantum_googred"
+        android:text="REMOVE FROM CURRENT LIST "
+        android:layout_below="@id/btn_add_position"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

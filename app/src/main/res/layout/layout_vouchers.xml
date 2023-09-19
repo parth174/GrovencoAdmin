@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/rl_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_voucher_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50% OFF"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/delete"
+        android:foreground="?attr/selectableItemBackground"
+        android:id="@+id/img_delete"
+        android:layout_toRightOf="@+id/tv_voucher_title"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_voucher_details"
+        android:layout_below="@+id/tv_voucher_title"
+        android:layout_marginTop="5dp"
+        android:text="Get upto 50% OFF on orders above 200 tg g6 y6 y6 y 6 y6y 6y 6y6 y 6y jjj t"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_min_order_details"
+        android:layout_below="@+id/tv_voucher_details"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tv_min_order_details"
+        android:id="@+id/rl_voucher_code">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/ll_voucher_status"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:id="@+id/ll_placed"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/tv_placed"
+                    android:textSize="11sp"
+                    android:text="Enabled"/>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/switch_enabled"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:id="@+id/ll_packed"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/tv_packed"
+                    android:textSize="11sp"
+                    android:text="Visible"/>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/switch_visible"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/background_dashed"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:id="@+id/tv_voucher_code"
+            android:text="NEW100"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_voucher_code"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:visibility="visible"
+            android:layout_marginTop="2dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_qty"
+            android:text="X 1"/>
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/rl_voucher_code"
+        android:background="@color/quantum_grey300"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/tv_max_discount"
+        android:layout_alignParentRight="true"
+        android:text="Upto Rs 100"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginActivity"
+     >
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/staticdetails"
+            android:textSize="25sp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:text="@string/app_name"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/login_img"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/staticdetails"
+            android:src="@mipmap/grovenco_logo_circle"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditTextTheme"
+            android:paddingBottom="15dp"
+            android:hint="Email Id."
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/editname"
+            android:textSize="18sp"
+            android:layout_below="@+id/login_img"
+            android:text=""/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/EditTextTheme"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/editname"
+            android:textSize="18sp"
+            android:id="@+id/editpass" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editpass"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:text="Login"
+            android:id="@+id/loginbutton"
+            android:background="@color/colorTheme"
+            android:foreground="?attr/selectableItemBackground"
+            android:textColor="#ffff"
+            />
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

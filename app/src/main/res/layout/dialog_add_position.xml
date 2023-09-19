@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Please select the type of list to which you want to add this item"
+        android:textSize="15sp"/>
+
+    <Spinner
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/spn_list_type"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="20dp"
+        android:text="Please select the position"
+        android:textSize="15sp"/>
+
+    <Spinner
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/spn_position"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <View
+        android:layout_width="170dp"
+        android:layout_height="1dp"
+        android:background="@color/quantum_grey300"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

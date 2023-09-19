@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:id="@+id/rl_order_item"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/img_item"
+        android:src="@mipmap/ic_launcher"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/img_item"
+        android:background="@color/quantum_grey300"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_item"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:id="@+id/rv_price">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/ll_price"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/tv_grovenco_price"
+                    android:text="₹120"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/tv_mrp"
+                    android:text="₹123"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹20 OFF"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="30dp"
+                android:textSize="11sp"
+                android:paddingLeft="5dp"
+                android:textAllCaps="true"
+                android:paddingRight="5dp"
+                android:paddingTop="2.5dp"
+                android:paddingBottom="2.5dp"
+                android:background="@color/green"
+                android:textColor="@color/white"
+                android:id="@+id/tv_discount"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="2dp"
+                android:layout_below="@+id/tv_discount"
+                android:layout_alignParentRight="true"
+                android:text="₹20 OFF"
+                android:textSize="11sp"
+                android:paddingLeft="5dp"
+                android:textAllCaps="true"
+                android:paddingRight="5dp"
+                android:paddingTop="2.5dp"
+                android:paddingBottom="2.5dp"
+                android:id="@+id/tv_cancel_admin"
+                />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/rl_change_item_qty"
+            android:layout_below="@+id/rv_price"
+            android:id="@+id/tv_item_name"
+            android:maxLines="2"
+            android:text="Name"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:id="@+id/rl_change_item_qty"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rv_price">
+
+            <TextView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:background="@drawable/background_square_border"
+                android:textColor="@color/colorTheme"
+                android:gravity="center"
+                android:id="@+id/btn_minus"
+                android:textStyle="bold"
+                android:text="-"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_toRightOf="@+id/btn_minus"
+                android:id="@+id/tv_qty"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_toRightOf="@id/tv_qty"
+                android:background="@drawable/background_square_border"
+                android:textColor="@color/colorTheme"
+                android:id="@+id/btn_plus"
+                android:gravity="center"
+                android:textStyle="bold"
+
+                android:text="+"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_item_name"
+            android:id="@+id/rl_buttons">
+
+            <TextView
+                android:id="@+id/tv_item_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="weight" />
+
+            <TextView
+                android:id="@+id/tv_item_price"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="₹120 X 3" />
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

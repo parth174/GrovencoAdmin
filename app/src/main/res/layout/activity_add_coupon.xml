@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddCouponActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddCouponActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ll_addItem"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context=".HomeActivity"
+            tools:showIn="@layout/app_bar_home">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_type"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Coupon Type :"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="8dp"
+                    android:theme="@style/EditTextTheme"
+                    android:id="@+id/spn_coupon_type"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/quantum_grey400"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/error"
+                    android:textSize="10sp"
+                    android:id="@+id/tv_category"
+                    android:drawablePadding="5dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/quantum_googred"
+                    android:text="ffffffffff"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_code"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/quantum_black_100"
+                    android:layout_marginLeft="5dp"
+                    android:text="Code :"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:inputType="textPersonName"
+                    android:theme="@style/EditTextTheme"
+                    android:id="@+id/et_code"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/error"
+                    android:textSize="10sp"
+                    android:id="@+id/tv_code"
+                    android:drawablePadding="5dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/quantum_googred"
+                    android:text="ffffffffff"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_title"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/quantum_black_100"
+                    android:layout_marginLeft="5dp"
+                    android:text="Title :"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:inputType="textPersonName"
+                    android:theme="@style/EditTextTheme"
+                    android:id="@+id/et_title"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/error"
+                    android:textSize="10sp"
+                    android:id="@+id/tv_title"
+                    android:drawablePadding="5dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/quantum_googred"
+                    android:text="ffffffffff"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_details"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/quantum_black_100"
+                    android:layout_marginLeft="5dp"
+                    android:text="Coupon Details :"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:inputType="textPersonName"
+                    android:theme="@style/EditTextTheme"
+                    android:id="@+id/et_details"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/error"
+                    android:textSize="10sp"
+                    android:id="@+id/tv_details"
+                    android:drawablePadding="5dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/quantum_googred"
+                    android:text="ffffffffff"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_min_order"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/quantum_black_100"
+                    android:layout_marginLeft="5dp"
+                    android:text="Minimum Order Value :"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type 0 in case of no min order value"
+                    android:paddingBottom="15dp"
+                    android:inputType="number"
+                    android:theme="@style/EditTextTheme"
+                    android:id="@+id/et_min_order"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/error"
+                    android:textSize="10sp"
+                    android:id="@+id/tv_min_order"
+                    android:drawablePadding="5dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/quantum_googred"
+                    android:text="ffffffffff"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_discount"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/quantum_black_100"
+                    android:layout_marginLeft="5dp"
+                    android:text="Discount Amount :"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:inputType="number"
+                    android:theme="@style/EditTextTheme"
+                    android:id="@+id/et_discount"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/error"
+                    android:textSize="10sp"
+                    android:id="@+id/tv_discount"
+                    android:drawablePadding="5dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/quantum_googred"
+                    android:text="ffffffffff"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_offer_percent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/quantum_black_100"
+                    android:layout_marginLeft="5dp"
+                    android:text="Offer Percentage :"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:inputType="number"
+                    android:theme="@style/EditTextTheme"
+                    android:id="@+id/et_offer_percent"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/error"
+                    android:textSize="10sp"
+                    android:id="@+id/tv_offer_percent"
+                    android:drawablePadding="5dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/quantum_googred"
+                    android:text="ffffffffff"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_max_discount"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/quantum_black_100"
+                    android:layout_marginLeft="5dp"
+                    android:text="Maximum Discount :"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type 0 in case of no max discount criteria"
+                    android:paddingBottom="15dp"
+                    android:inputType="number"
+                    android:theme="@style/EditTextTheme"
+                    android:id="@+id/et_max_discount"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/error"
+                    android:textSize="10sp"
+                    android:id="@+id/tv_max_discount"
+                    android:drawablePadding="5dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/quantum_googred"
+                    android:text="ffffffffff"
+                    />
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_add"
+                android:layout_marginTop="50dp"
+                android:text="ADD COUPON"
+                android:textColor="@color/quantum_white_100"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
+
